@@ -62,15 +62,16 @@ header {
     color: #ff4d00;
     display: flex;
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     padding: 0 5%;
 }
-
+/* 
 .empty {
     width: 50%;
-}
+} */
 
 header p {
+    margin-left: 6rem;
     width: 50%;
     display: flex;
 }
@@ -136,6 +137,29 @@ main {
     justify-content: space-between;
 }
 
+.inner-1 .normal {
+    font-family: text-fonts;
+    font-size: 0.8rem;
+}   
+
+.normal .btns {
+    height: max-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+}
+
+.small .pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
 .editor-tabs {
     display: flex;
     align-items: center;
@@ -163,6 +187,43 @@ main {
     cursor: pointer;
 }
 
-.selected {
+.tab-selected {
     color: #ff4d00;
+}
+
+.btn-selected {
+    color: black;
+    font-weight: 600;
+}
+
+.inner-0 .normal {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.inner-0 .normal .problem-list {
+    color: #f5f5f5;
+    font-size: 0.6rem;
+    margin-right: 1rem;
+    font-family: text-fonts;
+    cursor: pointer;
+}
+
+.inner-2 .normal {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.move-btns {
+    color: #f5f5f5;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    font-family: text-fonts;
+    display: flex;
+    gap: 1rem;
+}
+
+.move-btns span {
+    cursor: pointer;
 }
