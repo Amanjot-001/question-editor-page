@@ -13,6 +13,11 @@
     src: url(Akkurat-Mono.OTF);
 }
 
+@font-face {
+    font-family: editor-font;
+    src: url(ProggyVector-Regular\ Mac.otf);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -128,7 +133,17 @@ main {
     background-color: rgba(239,239,239);;
     /* flex-grow: 1; */
     height: 100%;
-    font-size: 0.85rem;
+    font-size: 12px;
+    font-family: editor-font;
+}
+
+.ace_scrollbar::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
 }
 
 .inner-0 .large {
@@ -139,12 +154,12 @@ main {
 
 .inner-1 .normal {
     font-family: text-fonts;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }   
 
 .normal .btns {
     height: max-content;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -156,8 +171,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
-    font-size: 0.8rem;
+    padding: 1.5rem 0;
+    font-size: 0.7rem;
 }
 
 .editor-tabs {
@@ -204,7 +219,7 @@ main {
 .inner-0 .normal .problem-list {
     color: #f5f5f5;
     font-size: 0.6rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     font-family: text-fonts;
     cursor: pointer;
 }
@@ -217,8 +232,8 @@ main {
 
 .move-btns {
     color: #f5f5f5;
-    font-size: 0.7rem;
-    margin-right: 1rem;
+    font-size: 0.6rem;
+    margin-right: 1.5rem;
     font-family: text-fonts;
     display: flex;
     gap: 1rem;
@@ -226,4 +241,75 @@ main {
 
 .move-btns span {
     cursor: pointer;
+}
+
+.inner-2 .large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.6rem;  
+    color: #f5f5f5;
+    font-family: text-fonts;
+}
+
+.large .right {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.large .console {
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.large .right div {
+    cursor: pointer;
+}
+
+.inner-0 .small {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ques-no {
+    font-family: text-fonts;
+    font-size: 0.6rem;
+    color: #ff4d00;
+}
+
+.inner-0 .medium {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ques-heading {
+    font-family: text-fonts;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+}
+
+.inner-1 .medium {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.ques-info {
+    font-family: text-fonts;
+    font-size: 0.8rem;
+}
+
+code {
+    background-color: #8e8e8e;
+    /* border-color: #f7faff1f; */
+    color: #eff1f6f5;
+    border-radius: 5px;
+    /* border-width: 1px; */
+    line-height: 1.5;
+    padding: .05rem 0.1rem;
+    white-space: pre-wrap;
+    font-size: 0.7rem;
 }
