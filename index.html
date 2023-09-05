@@ -53,25 +53,33 @@
                 <div class="medium">
                     <div class="ques-heading">Creating a simple Calculator card.</div>
                 </div>
-                <div class="small"></div>
+                <div class="small hint">
+                    <span><i class="fa-regular fa-lightbulb" style="color: #ff4d00;"></i></span>
+                </div>
             </div>
         </div>
         <div class="row-1">
             <div class="inner-1">
                 <div class="small"></div>
                 <div class="large"><div id="editor"></div></div>
-                <div class="small">
-                    <div class="pointer">
-                        <i class="fa-solid fa-angles-right" style="color: #ff4d00;"></i>
+                <div class="small pointer">
+                    <div class="pointer-grid">
+                        <div class="r1">
+                            <i class="fa-solid fa-angles-right arrow" style="color: #ff4d00;"></i>
+                        </div>
+                        <div class="r2"></div>
+                        <div class="r3"></div>
+                        <div class="r4"></div>
+                        <div class="r5"></div>
                     </div>
                 </div>
                 <div class="normal">
                     <div class="btns">
-                        <div class="description btn-selected">Description</div>
-                        <div class="example">Example</div>
-                        <div class="preview">Preview</div>
-                        <div class="solution">Solution</div>
-                        <div class="submission">Submissions</div>
+                        <div class="description-btn btn-selected" onmouseover="showDiv('ques-info')" data-value="1">Description</div>
+                        <div class="example-btn" onmouseover="showDiv('example')" data-value="2">Example</div>
+                        <div class="preview-btn" onmouseover="showDiv('preview')" data-value="3">Preview</div>
+                        <div class="solution-btn" onmouseover="showDiv('solution')" data-value="4">Solution</div>
+                        <div class="submission-btn" onmouseover="showDiv('submission')" data-value="5">Submissions</div>
                     </div>
                 </div>
                 <div class="small"></div>
@@ -94,6 +102,20 @@
                         </li>
                     </ul>
                     </div>
+
+                    <div class="example hidden">
+                        <div id="ex-editor"></div>
+                    </div>
+                    
+                    <div class="preview hidden">
+                        <iframe src="" frameborder="0" height="300"></iframe>
+                    </div>
+
+                    <div class="solution hidden">
+                        <div id="sol-editor"></div>
+                    </div>
+
+                    <div class="submission hidden"></div>
                 </div>
                 <div class="small"></div>
             </div>
@@ -102,11 +124,11 @@
             <div class="inner-2">
                 <div class="small"></div>
                 <div class="large">
-                        <div class="console">Console <i class="fa-solid fa-terminal" style="color: #ffffff;"></i></div>
+                        <div class="console">Console <i class="fa-solid fa-terminal" style="color: #ff4d00;"></i></div>
                         <div class="right">
-                            <div class="run-btn">Run <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i></div>
+                            <div class="run-btn">Run <i class="fa-solid fa-circle-check" style="color: #ff4d00;"></i></div>
                             <div class="submit-btn">Submit <i class="fa-solid fa-right-to-bracket"
-                                    style="color: #ffffff;"></i></div>
+                                    style="color: #ff4d00;"></i></div>
                         </div>
                 </div>
                 <div class="small"></div>
@@ -117,7 +139,14 @@
                     </div>
                 </div>
                 <div class="small"></div>
-                <div class="medium"></div>
+                <div class="medium">
+                    <div class="difficulty">Easy</div>
+                    <div class="right">
+                        <div class="like"><i class="fa-regular fa-thumbs-up" style="color: #ff4d00;"></i>100</div>
+                        <div class="dislike"><i class="fa-regular fa-thumbs-down" style="color: black;"></i>2</div>
+                        <div class="share"><i class="fa-solid fa-share" style="color: black;"></i></div>
+                    </div>
+                </div>
                 <div class="small"></div>
             </div>
         </div>
