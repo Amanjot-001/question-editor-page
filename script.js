@@ -1,7 +1,7 @@
 let editor = ace.edit("editor");
 editor.setTheme("ace/theme/eclipse");
 editor.setOption('enableLiveAutocompletion', true);
-editor.session.setMode("ace/mode/css");
+editor.session.setMode("ace/mode/html");
 
 let exEditor = ace.edit("ex-editor");
 exEditor.setTheme("ace/theme/dracula");
@@ -13,9 +13,11 @@ solEditor.setTheme("ace/theme/dracula");
 solEditor.session.setMode("ace/mode/html");
 solEditor.setReadOnly(true);
 
-exEditor.setValue(`<!-- How to create nested divs -->\n<div class="class-name">\n\t<div class="nested-class">\n\t</div>\n</div>`);
+editor.setValue(`<div class="calculator-card">\n\t<div class="display">\n\t</div>\n\t<div class="buttons">\n\t</div>\n</div>`);
 
-solEditor.setValue(`<div class="calculator-card">\n\t<div class="display">\n\t</div>\n\t<div class="buttons">\n\t</div>\n</div>`);
+exEditor.setValue(`\n<!-- How to create nested divs -->\n<div class="class-name">\n\t<div class="nested-class">\n\t</div>\n</div>`);
+
+solEditor.setValue(`\n<!-- Here's how you can implement this-->\n<div class="calculator-card">\n\t<div class="display">\n\t</div>\n\t<div class="buttons">\n\t</div>\n</div>`);
 
 exEditor.clearSelection();
 exEditor.renderer.$cursorLayer.element.style.opacity = 0;
